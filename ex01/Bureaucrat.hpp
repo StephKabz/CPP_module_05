@@ -6,7 +6,7 @@
 /*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 14:46:31 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/05 15:19:37 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/05 17:57:17 by kingstephan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 #include <fstream>
 #include <exception>
 
+class Form;
+
 class Bureaucrat
 {
 	private :
@@ -36,6 +38,7 @@ class Bureaucrat
 		int	getGrade() const;
 		void plusGrade();
 		void minusGrade();
+		void signForm(Form& form);
 		class GradeTooHighException : public std::exception
 		{
 			virtual const char* what() const throw()
@@ -53,7 +56,7 @@ class Bureaucrat
 		};
 		~Bureaucrat();
 };
-std::ostream& operator<<(std::ostream& out, const Bureaucrat& Bureaucrat);
+std::ostream& operator<<(std::ostream& out, const Bureaucrat& bureaucrat);
 	
 
 #endif
