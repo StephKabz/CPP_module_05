@@ -6,7 +6,7 @@
 /*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 17:32:56 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/05 18:11:52 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/06 16:51:06 by kingstephan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,17 @@ int main()
 	}
 	catch (std::exception& e) {
     	std::cout << "Exception: " << e.what() << std::endl;
+	}
+	std::cout << std::endl << "  ====================  " << std::endl << std::endl;
+	try {
+		Bureaucrat alice("Alice", 10);
+		Form contract("Contract", 50, 25);
+		
+		alice.signForm(contract);  // 1ère signature
+		alice.signForm(contract);  // 2ème signature
+	}
+	catch (std::exception& e) {
+		std::cout << "Exception: " << e.what() << std::endl;
 	}
 	return (0);
 };
