@@ -6,7 +6,7 @@
 /*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/06 14:41:02 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/09 13:04:36 by stkabang         ###   ########.fr       */
+/*   Updated: 2026/03/09 16:10:25 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 	std::ofstream file((this->target + "_shrubbery").c_str());
 	if (file.is_open())
 	{
-		file << "      _-_" << std::endl
+		file << "       _-_" << std::endl
     		<< "    *~~   ~~*" << std::endl
  			<< " *~~         ~~*" << std::endl
 			<< "{               }" << std::endl
