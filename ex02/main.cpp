@@ -6,7 +6,7 @@
 /*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 17:32:56 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/07 15:34:43 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/07 16:24:07 by kingstephan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
-#include <ctime>     // Pour time()
-#include <cstdlib>   // Pour srand()
+#include <ctime>
+#include <cstdlib>
 
 void printSeparator(std::string title) {
     std::cout << "\n========================================" << std::endl;
