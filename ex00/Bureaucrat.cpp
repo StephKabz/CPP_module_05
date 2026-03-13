@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 15:05:25 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/03 17:29:18 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/13 13:07:36 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void Bureaucrat::minusGrade()
 
 Bureaucrat::~Bureaucrat()
 {
-	std::cout << "Bureaucrat destructor called" << std::endl;
+	std::cout << this->getName() << " bureaucrat destructor called" << std::endl;
 };
 
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& Bureaucrat)

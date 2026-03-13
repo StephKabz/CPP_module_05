@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 17:32:56 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/06 16:51:06 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/13 13:16:43 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ int main()
 	catch (std::exception& e) {
     	std::cout << "Exception: " << e.what() << std::endl;
 	}
+
 	std::cout << std::endl << "  ====================  " << std::endl << std::endl;
+
 	try {
 		Bureaucrat steph("Steph", 70);
 		Form form1("Tax Form", 50, 25);
@@ -44,7 +46,9 @@ int main()
 	catch (std::exception& e) {
     	std::cout << "Exception: " << e.what() << std::endl;
 	}
+
 	std::cout << std::endl << "  ====================  " << std::endl << std::endl;
+
 	try {
 		Bureaucrat marc("Marc", 50);
 		Form form1("Tax Form", 50, 25);
@@ -61,7 +65,9 @@ int main()
 	catch (std::exception& e) {
     	std::cout << "Exception: " << e.what() << std::endl;
 	}
+
 	std::cout << std::endl << "  ====================  " << std::endl << std::endl;
+
 	try {
 		Bureaucrat alice("Alice", 10);
 		Form contract("Contract", 50, 25);
@@ -72,6 +78,7 @@ int main()
 	catch (std::exception& e) {
 		std::cout << "Exception: " << e.what() << std::endl;
 	}
+	
 	return (0);
 };
 

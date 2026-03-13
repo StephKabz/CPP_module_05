@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 17:32:56 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/07 18:10:57 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/13 14:20:30 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ void printSeparator(std::string title) {
 
 int main() {
     srand(time(NULL));
-    
-    // ========================================
+
     // TEST 1: TEST DU SUJET (exemple officiel)
-    // ========================================
+
     printSeparator("TEST 1: Subject Example");
+
     {
         Intern someRandomIntern;
         AForm* rrf;
@@ -49,13 +49,12 @@ int main() {
         }
     }
     
-    // ========================================
     // TEST 2: Tous les formulaires valides
-    // ========================================
     printSeparator("TEST 2: All Valid Forms");
+
     {
         Intern intern;
-        Bureaucrat boss("Boss", 1);  // Can do everything
+        Bureaucrat boss("Boss", 1);
         
         std::cout << "--- Creating Shrubbery Form ---" << std::endl;
         AForm* shrub = intern.makeForm("shrubbery creation", "home");
@@ -82,11 +81,11 @@ int main() {
             delete pardon;
         }
     }
-    
-    // ========================================
+
     // TEST 3: Formulaires invalides
-    // ========================================
+
     printSeparator("TEST 3: Invalid Form Names");
+
     {
         Intern intern;
         AForm* form;

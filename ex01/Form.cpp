@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 15:15:58 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/06 14:17:43 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/13 13:55:49 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ std::string Form::getName() const
 {
 	return (this->name);
 };
+
 int Form::getSign_grade() const
 {
 	return (this->sign_grade);

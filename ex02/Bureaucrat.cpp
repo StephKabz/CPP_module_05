@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 15:05:25 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/06 16:20:34 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/13 14:08:22 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ void Bureaucrat::executeForm(AForm const & form)
 
 Bureaucrat::~Bureaucrat()
 {
-	std::cout << "Bureaucrat destructor called" << std::endl;
+	std::cout << this->getName() << " Bureaucrat destructor called" << std::endl;
 };
 
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& bureaucrat)
